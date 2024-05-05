@@ -14,6 +14,11 @@
 	export { className as class };
 
 	/**
+	 * Style to be added to the list div
+	 */
+	export let style;
+
+	/**
 	 * Add a multiDrag class. Automatically mounts the multiDrag Plugin, sets it to true and sets fallbackTolerance to 3.
 	 * @type {string}
 	 */
@@ -278,6 +283,6 @@ Svelte wrapper for SortableJS.
 	```
   -->
 
-<div bind:this={list} class={className}>
+<div bind:this={list} class={className} style={style}>
 	<slot />
 </div>
